@@ -1,0 +1,5 @@
+MetaTrader5==5.0.6231
+xgboost==3.4.1
+lightgbm>=4.3,<5
+catboost>=1.2,<2
+scikit-learn>=1.4,<2

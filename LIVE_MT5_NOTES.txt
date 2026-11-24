@@ -1,0 +1,22 @@
+NOVA FURY LIVE MT5 NOTES
+
+1. This edition connects the dashboard to the local MetaTrader 5 terminal through Python.
+2. The requested terminal root is C:\Program Files\MetaTrader 5.
+3. Symbol requested is XAUUSD; broker suffixes such as XAUUSDm are auto-resolved.
+4. Timeframe is M5.
+5. Auto Trade starts OFF. Verify the MT5 account before turning it ON.
+6. Manual BUY/SELL and Auto Trade are REAL MT5 ORDERS.
+7. Close All is limited to positions carrying magic number 987654.
+8. The old simulator reset-balance buttons only refresh the real account; they do not fake a live broker balance.
+
+XGBoost add-on: automatic entries require the existing strategy signal plus XGBoost M5 direction probability >= XGB_THRESHOLD (default 0.58). Manual burst BUY/SELL buttons remain unchanged.
+
+
+PULLBACK RECOVERY SETTING
+- Recovery is ON by default.
+- After an original entry moves RECOVERY_ARM_POINTS (default 30 points) in profit,
+  the bridge places a same-direction LIMIT at the original entry price.
+- A pullback to the entry price activates that recovery order.
+- The recovery volume is the original position volume x 1.0 by default.
+- RECOVERY_MAX_PENDING=1 limits exposure to one pending recovery at a time.
+- To change the behavior, edit the five RECOVERY_* environment settings in START_MT5_BOT.ps1.

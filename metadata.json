@@ -1,0 +1,8 @@
+{
+  "name": "NovaFury AI Algo Bot",
+  "description": "Live MetaTrader 5 AI trading bridge and React dashboard with XAUUSD-only execution, Balanced Risk Guardian, broker-side protective stops, validated AI confirmations, confirmed pullback recovery and capped profit-funded compounding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_OPENAI_API"
+  ]
+}

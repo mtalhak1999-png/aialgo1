@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+data/risk_state.json
+data/risk_state.initialized
+.novafury_*.pid
+mt5_bridge.log
+mt5_bridge_error.log

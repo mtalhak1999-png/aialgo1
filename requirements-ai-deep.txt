@@ -1,0 +1,4 @@
+# Optional sequence-learning backend. Install only when enabling GRU or TCN.
+# On systems where PyTorch's default wheel is unsuitable, use the official
+# PyTorch install selector for the correct CPU/CUDA wheel.
+torch>=2.2,<3
